@@ -4,7 +4,7 @@ ENVIRONMENT = os.environ.get('ENVIRONMENT', False)
 
 if ENVIRONMENT:
     try:
-        API_ID = int(os.environ.get('API_ID', '27710337'))
+        API_ID = int(os.environ.get('API_ID', 0))
     except ValueError:
         raise Exception("Your API_ID is not a valid integer.")
     API_HASH = os.environ.get('API_HASH', '354e1dd8e1e3041ee2145196da8d6aac')
